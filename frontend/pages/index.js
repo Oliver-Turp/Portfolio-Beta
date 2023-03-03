@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Temp from "../public/temp.jpg";
 import NavBar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fa1, fa2, fa3, fa4, fa5 } from "@fortawesome/free-solid-svg-icons";
@@ -144,7 +145,9 @@ export default function Home() {
             </section>
           </section>
         </div>
+        {/* ADD IN FAQ SECTION */}
       </main>
+      <Footer />
     </>
   );
 }
