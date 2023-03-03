@@ -4,6 +4,9 @@ import styles from "../styles/Home.module.css";
 import Temp from "../public/temp.jpg";
 import NavBar from "../components/Navbar";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fa1, fa2, fa3, fa4, fa5 } from "@fortawesome/free-solid-svg-icons";
+
 export default function Home() {
   return (
     <>
@@ -79,6 +82,65 @@ export default function Home() {
               <h4>
                 Client's Can Manage Their Own Content To Avoid Any Hidden Fees!
               </h4>
+            </section>
+          </section>
+        </div>
+        {/* ADD IN TECH SLIDER COMPONENT */}
+        <div className={styles.home__process_bg}>
+          <section className={styles.home__process_wrap}>
+            <h2>My 5 Step Process</h2>
+            <h4>
+              Using the right tools with a well structured process leads to a
+              collaborative success!
+            </h4>
+            <section className={styles.home__process_grid}>
+              <section className={styles.home__process_item}>
+                <div className={styles.home__process_icon}>
+                  <FontAwesomeIcon icon={fa1} />
+                </div>
+                <h5>Research</h5>
+                <p>
+                  Gathering information about your company/project and its
+                  goals. Researching your industry and competitors.
+                </p>
+              </section>
+              <section className={styles.home__process_item}>
+                <div className={styles.home__process_icon}>
+                  <FontAwesomeIcon icon={fa2} />
+                </div>
+                <h5>Sketch</h5>
+                <p>
+                  Turning the initial research into a page by page wireframe
+                  skeleton of your site.
+                </p>
+              </section>
+              <section className={styles.home__process_item}>
+                <div className={styles.home__process_icon}>
+                  <FontAwesomeIcon icon={fa3} />
+                </div>
+                <h5>Design</h5>
+                <p>
+                  Wireframes are built into a fleshed out model ready for
+                  development.
+                </p>
+              </section>
+              <section className={styles.home__process_item}>
+                <div className={styles.home__process_icon}>
+                  <FontAwesomeIcon icon={fa4} />
+                </div>
+                <h5>Development</h5>
+                <p>
+                  The construction process is quick and easy once the design is
+                  ironed out!
+                </p>
+              </section>
+              <section className={styles.home__process_item}>
+                <div className={styles.home__process_icon}>
+                  <FontAwesomeIcon icon={fa5} />
+                </div>
+                <h5>Deploy!</h5>
+                <p>Your site is now ready to go!</p>
+              </section>
             </section>
           </section>
         </div>
