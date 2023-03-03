@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Montserrat', sans-serif;
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -29,70 +29,73 @@
 h1 {
   font-weight: 700;
   font-size: 67.34px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015em;
   font-family: 'Comfortaa', cursive;
 }
 
 h2 {
   font-weight: 600;
   font-size: 50.52px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015em;
   font-family: 'Comfortaa', cursive;
 }
 
 h3 {
   font-weight: 500;
   font-size: 37.9px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015em;
   font-family: 'Montserrat', sans-serif;
 }
 
 h4 {
   font-weight: 500;
   font-size: 28.43px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015em;
   font-family: 'Montserrat', sans-serif;
 }
 
 h5 {
   font-weight: 500;
   font-size: 21.33px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015em;
   font-family: 'Montserrat', sans-serif;
 }
 
 p {
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: -1.5%;
-  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.015em;
 }
 
-/* DEFAULT STYLES
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 85%;
+height: 10vh;
+margin: auto;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.nav-logo {
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+position: relative;
+flex: 2;
 }
 
-* {
-  box-sizing: border-box;
+.nav-logo img {
+  height: 100%;
+  width: auto;
+  padding: 1%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.nav-links {
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex: 1;
 }
-*/
