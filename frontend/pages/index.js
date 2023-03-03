@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Temp from "../public/temp.jpg";
+import NavBar from "../components/Navbar";
 
 export default function Home() {
   return (
@@ -13,34 +14,73 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className={styles.home__hero_wrap}>
-          <div className={styles.home__hero_wrap_left}>
-            <div className={styles.home__hero_wrap_left_text}>
-              <h5 className={styles.home__hero_wrap_left_text_h5}>
-                Hi, my name is
-              </h5>
-              <h1 className={styles.home__hero_wrap_left_text_h1}>
-                Oliver Turp
-              </h1>
-              <h3 className={styles.home__hero_wrap_left_text_h3}>
-                Your Website Is My Passion!
-              </h3>
-              <p className={styles.home__hero_wrap_left_text_p}>
-                I’m A Web Designer & Developer With A Love For All Things
-                Frontend! I’m based in the UK but work remotely with carefully
-                selected clientele and I'm always on the look out for new
-                opportunities!
-              </p>
-            </div>
-            <button className={styles.home__cta}>
-              <a href="#">
-                <h5>Let's Work Together!</h5>
-              </a>
-            </button>
+        <div className={styles.home__hero_bg}>
+          <NavBar />
+          <div className={styles.home__hero_wrap}>
+            <section className={styles.home__hero_wrap_left}>
+              <section className={styles.home__hero_wrap_left_text}>
+                <h5 className={styles.home__hero_wrap_left_text_h5}>
+                  Hi, my name is
+                </h5>
+                <h1 className={styles.home__hero_wrap_left_text_h1}>
+                  Oliver Turp
+                </h1>
+                <h3 className={styles.home__hero_wrap_left_text_h3}>
+                  Your Website Is My Passion!
+                </h3>
+                <p className={styles.home__hero_wrap_left_text_p}>
+                  I’m A Web Designer & Developer With A Love For All Things
+                  Frontend! I’m based in the UK but work remotely with carefully
+                  selected clientele and I'm always on the look out for new
+                  opportunities!
+                </p>
+              </section>
+              <button className={styles.home__cta}>
+                <a href="#">
+                  <h5>Let's Work Together!</h5>
+                </a>
+              </button>
+            </section>
+            <section className={styles.home__hero_wrap_right}>
+              <Image src={Temp} />
+            </section>
           </div>
-          <div className={styles.home__hero_wrap_right}>
-            <Image src={Temp} />
-          </div>
+        </div>
+        <div className={styles.home__card_wrap}>
+          <h2>Why Choose Me?</h2>
+          <section className={styles.home__card_grid}>
+            <section className={styles.home__card_item}>
+              <h3>Free Security!</h3>
+              <h4>HTTPS Included For All Sites We Host!</h4>
+            </section>
+            <section className={styles.home__card_item}>
+              <h3>Collaborative Design!</h3>
+              <h4>
+                Your Input Is Taken At Every Milestone To Ensure Your Vision Is
+                Met!
+              </h4>
+            </section>
+            <section className={styles.home__card_item}>
+              <h3>Green Hosting!</h3>
+              <h4>I Use Servers Powered By 100% Renewable Sources!</h4>
+            </section>
+            <section className={styles.home__card_item}>
+              <h3>Premium Hosting!</h3>
+              <h4>My Host Partner Has A Reported 100% Uptime Rating!</h4>
+            </section>
+            <section className={styles.home__card_item}>
+              <h3>Flexible Pricing!</h3>
+              <h4>
+                I Am Able To Adapt Any Request To Meet Your Budgetary Needs!
+              </h4>
+            </section>
+            <section className={styles.home__card_item}>
+              <h3>Free CMS!</h3>
+              <h4>
+                Client's Can Manage Their Own Content To Avoid Any Hidden Fees!
+              </h4>
+            </section>
+          </section>
         </div>
       </main>
     </>

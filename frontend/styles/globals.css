@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Montserrat:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Montserrat:wght@400;500&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -14,51 +14,65 @@
   --light-var1: #f9f1f0;
   --light-var2: #eaeaea;
   --light-accent: #550055;
-  --light-grad-left: background: linear-gradient(305.88deg, #F8B961 32.6%, rgba(253, 209, 148, 0.46) 100%);
-  --light-grad-right: background: linear-gradient(305.88deg, #F8B961 32.6%, rgba(253, 209, 148, 0.46) 100%), #FFFFFF;
-  /* CHECK THE ABOVE GRADIENT ACTUALLY WORKS*/
+  --light-grad: linear-gradient(
+    305.88deg,
+    #f8b961 32.6%,
+    rgba(253, 209, 148, 0.46) 100%
+  );
+  --light-grad-alt: linear-gradient(
+      305.88deg,
+      #f8b961 32.6%,
+      rgba(253, 209, 148, 0.46) 100%
+    ),
+    #ffffff;
   --light-font: #000000;
-  --dark-bg: #060D0DFA;
-  --dark-var1: #1C1F1F;
+  --dark-bg: #060d0dfa;
+  --dark-var1: #1c1f1f;
   --dark-var2: #323737;
-  --dark-accent: #D6AD60;
-  --dark-grad: background: linear-gradient(102.22deg, #140814 7.3%, rgba(17, 8, 13, 0.867217) 61.52%, rgba(16, 8, 9, 0.800412) 76.53%, rgba(27, 18, 6, 0.9) 90.77%);
-  --dark-font: #FFFFFF;
+  --dark-accent: #d6ad60;
+  --dark-grad: linear-gradient(
+    102.22deg,
+    #140814 7.3%,
+    rgba(17, 8, 13, 0.867217) 61.52%,
+    rgba(16, 8, 9, 0.800412) 76.53%,
+    rgba(27, 18, 6, 0.9) 90.77%
+  );
+  --dark-font: #ffffff;
 }
 
 h1 {
   font-weight: 700;
   font-size: 67.34px;
   letter-spacing: -0.015em;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 
 h2 {
   font-weight: 600;
   font-size: 50.52px;
   letter-spacing: -0.015em;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 
 h3 {
   font-weight: 500;
   font-size: 37.9px;
   letter-spacing: -0.015em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h4 {
   font-weight: 500;
   font-size: 28.43px;
   letter-spacing: -0.015em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h5 {
   font-weight: 500;
   font-size: 21.33px;
   letter-spacing: -0.015em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -68,34 +82,38 @@ p {
 }
 
 nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-max-width: 85%;
-height: 10vh;
-margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85%;
+  height: 10vh;
+  margin: auto;
 }
 
-.nav-logo {
-height: 100%;
-width: 100%;
-display: flex;
-align-items: center;
-position: relative;
-flex: 2;
+.nav_logo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 2;
 }
 
-.nav-logo img {
+.nav_logo img {
   height: 100%;
   width: auto;
   padding: 1%;
 }
 
-.nav-links {
-height: 100%;
-width: 100%;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-flex: 1;
+.nav_links {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+}
+
+.nav_links a {
+  color: var(--light-font);
 }

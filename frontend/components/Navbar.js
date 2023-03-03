@@ -4,14 +4,20 @@ import Logo_LM from "../public/logo_lm.png";
 
 const NavBar = () => {
   return (
-    <nav>
-      <div className="nav-logo">
+    <nav className="nav">
+      <div className="nav_logo">
         <Image src={Logo_LM} alt="logo" />
       </div>
-      <div className="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+      <div className="nav_links">
+        <a href="#">
+          <h5>Home</h5>
+        </a>
+        <a href="#">
+          <h5>About</h5>
+        </a>
+        <a href="#">
+          <h5>Contact</h5>
+        </a>
       </div>
     </nav>
   );
