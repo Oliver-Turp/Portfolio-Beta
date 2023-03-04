@@ -5,6 +5,8 @@ import Temp from "../public/temp.jpg";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+import TechSlider from "../components/TechSlider/TechSlider";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fa1, fa2, fa3, fa4, fa5 } from "@fortawesome/free-solid-svg-icons";
 
@@ -87,6 +89,7 @@ export default function Home() {
           </section>
         </div>
         {/* ADD IN TECH SLIDER COMPONENT */}
+        <TechSlider />
         <div className={styles.home__process_bg}>
           <section className={styles.home__process_wrap}>
             <h2>My 5 Step Process</h2>

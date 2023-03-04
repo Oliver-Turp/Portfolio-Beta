@@ -1,0 +1,39 @@
+/* Tech Slider */
+.tech_slider_bg {
+  background-color: var(--light-var2);
+}
+
+.tech_slider_bg h3 {
+  font-weight: 600;
+  padding: 48px 0px 32px 32px;
+}
+
+.tech_slider_container {
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech_slider {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: tech_slider_loop 20s linear infinite;
+}
+
+.tech_slider img {
+  margin: 0 5vw;
+  max-height: 120px;
+  width: auto;
+}
+
+@keyframes tech_slider_loop {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
