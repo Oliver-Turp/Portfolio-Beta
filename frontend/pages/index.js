@@ -6,9 +6,18 @@ import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import TechSlider from "../components/TechSlider/TechSlider";
+import FAQ from "../components/FAQ/FAQ";
+import CTA from "../components/CTA/CTA";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fa1, fa2, fa3, fa4, fa5 } from "@fortawesome/free-solid-svg-icons";
+import {
+  fa1,
+  fa2,
+  fa3,
+  fa4,
+  fa5,
+  faCircleInfo,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -88,7 +97,6 @@ export default function Home() {
             </section>
           </section>
         </div>
-        {/* ADD IN TECH SLIDER COMPONENT */}
         <TechSlider />
         <div className={styles.home__process_bg}>
           <section className={styles.home__process_wrap}>
@@ -148,7 +156,9 @@ export default function Home() {
             </section>
           </section>
         </div>
-        {/* ADD IN FAQ SECTION */}
+        <FAQ />
+        {/* FINAL CTA COMPONENT */}
+        <CTA />
       </main>
       <Footer />
     </>
