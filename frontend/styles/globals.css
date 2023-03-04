@@ -10,6 +10,7 @@
   text-decoration: none;
   box-sizing: border-box;
   outline: none;
+  color: inherit;
 }
 button,
 input[type="submit"],

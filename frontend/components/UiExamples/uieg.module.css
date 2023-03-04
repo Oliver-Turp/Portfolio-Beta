@@ -1,0 +1,16 @@
+.uieg_wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.uieg_text {
+  max-width: 88vw;
+  margin: auto;
+}
+
+.uieg_text h1 {
+  margin: 36px 0;
+}

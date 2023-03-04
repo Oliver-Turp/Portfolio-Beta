@@ -157,7 +157,6 @@ export default function Home() {
           </section>
         </div>
         <FAQ />
-        {/* FINAL CTA COMPONENT */}
         <CTA />
       </main>
       <Footer />
