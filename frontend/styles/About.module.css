@@ -70,6 +70,10 @@
   cursor: pointer;
 }
 
+.about_hero_cta_btn:active {
+  scale: 0.9;
+}
+
 .about_hero_cta_btn.primary {
   background: var(--light-accent);
   color: var(--dark-font);

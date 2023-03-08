@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <section className="footer__copyright">&copy;Oliver Turp 2023</section>
       <section className="footer__links">
-        <a href="#">UI Examples</a>
+        <a href="/uiExamples">UI Examples</a>
         <a href="#">Privacy Policy</a>
         <a href="#">
           Terms &<br />

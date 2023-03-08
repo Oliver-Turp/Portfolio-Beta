@@ -26,3 +26,7 @@
   margin-top: 80px;
   filter: drop-shadow(0px 0px 20px var(--light-accent));
 }
+
+.cta_btn:active {
+  scale: 0.9;
+}

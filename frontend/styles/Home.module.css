@@ -1,7 +1,6 @@
 /* HERO STYLES */
 
 .home__hero_bg {
-  height: 100%;
   width: 100%;
   z-index: -1;
   background: var(--light-grad-alt);
@@ -9,12 +8,12 @@
 
 .home__hero_wrap {
   max-width: 85%;
-  height: 90vh;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  padding-bottom: 10vh;
 }
 
 .home__hero_wrap_left {
@@ -74,6 +73,10 @@
 
 .home__cta a {
   color: var(--dark-font);
+}
+
+.home__cta:active {
+  scale: 0.9;
 }
 
 /* CARD STYLES */

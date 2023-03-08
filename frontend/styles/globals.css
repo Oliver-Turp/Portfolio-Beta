@@ -134,6 +134,10 @@ nav {
   color: var(--light-font);
 }
 
+.nav_links a:hover {
+  color: var(--dark-accent);
+}
+
 /* FOOTER STYLES */
 
 footer {
@@ -168,7 +172,7 @@ footer .footer__links a {
 footer .footer__icons {
   font-size: 2.25rem;
   display: flex;
-  gap: 10%;
+  gap: 13%;
 }
 
 footer .footer__icons svg {

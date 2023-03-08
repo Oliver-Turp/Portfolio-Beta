@@ -9,13 +9,13 @@ const NavBar = () => {
         <Image src={Logo_LM} alt="logo" />
       </div>
       <div className="nav_links">
-        <a href="#">
+        <a href="/">
           <h5>Home</h5>
         </a>
-        <a href="#">
+        <a href="/about">
           <h5>About</h5>
         </a>
-        <a href="#">
+        <a href="/contact">
           <h5>Contact</h5>
         </a>
       </div>

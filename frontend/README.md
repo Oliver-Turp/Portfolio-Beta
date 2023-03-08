@@ -1,10 +1,11 @@
 #FRONTEND TO-DO LIST!
 
 ##General:
-[ ] - Link Navbar To Pages
+[x] - Link Navbar To Pages
 [ ] - Link Footer To Page
 [ ] - Create ThemeToggle
 [ ] - Add onScroll effects. FramerMotion?
+[ ] - Boost new page load times, still slower than I wanted. SSG?
 
 ##HomePage: 
 [ ] - Decide on hero illustration
@@ -23,9 +24,12 @@
 [ ] - Link Section To Separate Sandbox Site
 [ ] - Continue Post CMS Finish. Maybe Add To Post Launch Tasks.
 
+##ContactPage:
+[ ] - Needs A Working Contact Form Like Previous. Task For Victor.
+[ ] - Add Responsiveness
+
 ##Unstarted Pages:
 [ ] - 404
-[ ] - Contact
 [ ] - Privacy Policy
 [ ] - Terms & Conditions
 [ ] - Coming Soon
