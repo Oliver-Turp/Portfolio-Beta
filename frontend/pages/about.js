@@ -21,7 +21,7 @@ const About = () => {
       <main>
         <div className={styles.about_hero_wrap}>
           <div className={styles.about_hero_main}>
-            <section className={styles.about_hero_text}>
+            <section className={`about_hero_text ${styles.about_hero_text}`}>
               <h1>
                 Hello! <br />
                 I'm Oliver Turp
@@ -54,15 +54,13 @@ const About = () => {
           </div>
           <section className={styles.about_hero_cta}>
             <Link
-              className={[styles.about_hero_cta_btn, styles.primary].join(" ")}
+              className={`about_hero_cta_btn primary ${styles.about_hero_cta_btn}`}
               href="#"
             >
               Download My CV
             </Link>
             <Link
-              className={[styles.about_hero_cta_btn, styles.secondary].join(
-                " "
-              )}
+              className={`about_hero_cta_btn secondary ${styles.about_hero_cta_btn}`}
               href="#"
             >
               Download My Degree
@@ -71,7 +69,7 @@ const About = () => {
         </div>
         <TechSlider />
         <div className={styles.about_skills_wrap}>
-          <section className={styles.about_skills_card}>
+          <section className={`about_skills_card ${styles.about_skills_card}`}>
             <h3>Transferable Skills</h3>
             <section className={styles.about_skills_card_grid}>
               <section className={styles.about_skills_card_grid_item}>
@@ -115,7 +113,7 @@ const About = () => {
               </section>
             </section>
           </section>
-          <section className={styles.about_skills_card}>
+          <section className={`about_skills_card ${styles.about_skills_card}`}>
             <h3>Technical Skills</h3>
             <section className={styles.about_skills_card_grid}>
               <section className={styles.about_skills_card_grid_item}>

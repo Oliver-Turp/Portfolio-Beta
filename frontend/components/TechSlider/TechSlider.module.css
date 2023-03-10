@@ -1,8 +1,4 @@
 /* Tech Slider */
-.tech_slider_bg {
-  background-color: var(--light-var2);
-}
-
 .tech_slider_bg h3 {
   font-weight: 600;
   padding: 48px 0px 32px 32px;

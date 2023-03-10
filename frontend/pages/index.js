@@ -10,14 +10,7 @@ import FAQ from "../components/FAQ/FAQ";
 import CTA from "../components/CTA/CTA";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  fa1,
-  fa2,
-  fa3,
-  fa4,
-  fa5,
-  faCircleInfo,
-} from "@fortawesome/free-solid-svg-icons";
+import { fa1, fa2, fa3, fa4, fa5 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -29,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className={styles.home__hero_bg}>
+        <div className={`home__hero_bg ${styles.home__hero_bg}`}>
           <NavBar />
           <div className={styles.home__hero_wrap}>
             <section className={styles.home__hero_wrap_left}>
@@ -50,46 +43,46 @@ export default function Home() {
                   opportunities!
                 </p>
               </section>
-              <button className={styles.home__cta}>
+              <button className={`home__cta ${styles.home__cta}`}>
                 <a href="#">
                   <h5>Let's Work Together!</h5>
                 </a>
               </button>
             </section>
             <section className={styles.home__hero_wrap_right}>
-              <Image src={Temp} />
+              <Image src={Temp} alt="" priority />
             </section>
           </div>
         </div>
         <div className={styles.home__card_wrap}>
           <h2>Why Choose Me?</h2>
           <section className={styles.home__card_grid}>
-            <section className={styles.home__card_item}>
+            <section className={`home__card_item ${styles.home__card_item}`}>
               <h3>Free Security!</h3>
               <h4>HTTPS Included For All Sites We Host!</h4>
             </section>
-            <section className={styles.home__card_item}>
+            <section className={`home__card_item ${styles.home__card_item}`}>
               <h3>Collaborative Design!</h3>
               <h4>
                 Your Input Is Taken At Every Milestone To Ensure Your Vision Is
                 Met!
               </h4>
             </section>
-            <section className={styles.home__card_item}>
+            <section className={`home__card_item ${styles.home__card_item}`}>
               <h3>Green Hosting!</h3>
               <h4>I Use Servers Powered By 100% Renewable Sources!</h4>
             </section>
-            <section className={styles.home__card_item}>
+            <section className={`home__card_item ${styles.home__card_item}`}>
               <h3>Premium Hosting!</h3>
               <h4>My Host Partner Has A Reported 100% Uptime Rating!</h4>
             </section>
-            <section className={styles.home__card_item}>
+            <section className={`home__card_item ${styles.home__card_item}`}>
               <h3>Flexible Pricing!</h3>
               <h4>
                 I Am Able To Adapt Any Request To Meet Your Budgetary Needs!
               </h4>
             </section>
-            <section className={styles.home__card_item}>
+            <section className={`home__card_item ${styles.home__card_item}`}>
               <h3>Free CMS!</h3>
               <h4>
                 Client's Can Manage Their Own Content To Avoid Any Hidden Fees!
@@ -98,7 +91,7 @@ export default function Home() {
           </section>
         </div>
         <TechSlider />
-        <div className={styles.home__process_bg}>
+        <div className={`home__process_bg ${styles.home__process_bg}`}>
           <section className={styles.home__process_wrap}>
             <h2>My 5 Step Process</h2>
             <h4>
@@ -107,7 +100,9 @@ export default function Home() {
             </h4>
             <section className={styles.home__process_grid}>
               <section className={styles.home__process_item}>
-                <div className={styles.home__process_icon}>
+                <div
+                  className={`home__process_icon ${styles.home__process_icon}`}
+                >
                   <FontAwesomeIcon icon={fa1} />
                 </div>
                 <h5>Research</h5>
@@ -117,7 +112,9 @@ export default function Home() {
                 </p>
               </section>
               <section className={styles.home__process_item}>
-                <div className={styles.home__process_icon}>
+                <div
+                  className={`home__process_icon ${styles.home__process_icon}`}
+                >
                   <FontAwesomeIcon icon={fa2} />
                 </div>
                 <h5>Sketch</h5>
@@ -127,7 +124,9 @@ export default function Home() {
                 </p>
               </section>
               <section className={styles.home__process_item}>
-                <div className={styles.home__process_icon}>
+                <div
+                  className={`home__process_icon ${styles.home__process_icon}`}
+                >
                   <FontAwesomeIcon icon={fa3} />
                 </div>
                 <h5>Design</h5>
@@ -137,7 +136,9 @@ export default function Home() {
                 </p>
               </section>
               <section className={styles.home__process_item}>
-                <div className={styles.home__process_icon}>
+                <div
+                  className={`home__process_icon ${styles.home__process_icon}`}
+                >
                   <FontAwesomeIcon icon={fa4} />
                 </div>
                 <h5>Development</h5>
@@ -147,7 +148,9 @@ export default function Home() {
                 </p>
               </section>
               <section className={styles.home__process_item}>
-                <div className={styles.home__process_icon}>
+                <div
+                  className={`home__process_icon ${styles.home__process_icon}`}
+                >
                   <FontAwesomeIcon icon={fa5} />
                 </div>
                 <h5>Deploy!</h5>

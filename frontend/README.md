@@ -3,9 +3,10 @@
 ## General:
 - [x] - Link Navbar To Pages
 - [ ] - Link Footer To Page
-- [ ] - Create ThemeToggle
-- [ ] - Add onScroll effects. FramerMotion?
+- [x] - Create ThemeToggle
+- [ ] - Add onScroll effects. FramerMotion. Need SSG etc setup first to see if what transitions we can accomplish, or if we just stick with animate on scroll.
 - [ ] - Boost new page load times, still slower than I wanted. SSG?
+- [ ] - Need To Move To Top Of The Page When New Page Is Loaded.
 
 ## HomePage: 
 - [ ] - Decide on hero illustration
@@ -20,8 +21,6 @@
 - [ ] - Add Responsiveness
 
 ## UiExamples:
-- [ ] - Continue Post CMS Finish. Maybe Add To Post Launch Tasks.
-- [ ] - Link Section To MongoDB
 - [ ] - Link Section To Separate Sandbox Site
 
 ## ContactPage:

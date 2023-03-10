@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo_LM from "../public/logo_lm.png";
 
 const NavBar = () => {
   return (
     <nav className="nav">
       <div className="nav_logo">
-        <Image src={Logo_LM} alt="logo" />
+        <Link href="/" />
       </div>
       <div className="nav_links">
         <a href="/">

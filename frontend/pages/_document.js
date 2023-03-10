@@ -1,13 +1,34 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+import Cookies from "js-cookie";
+
+class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    let theme;
+    if (ctx.req && "cookies" in ctx.req) {
+      const { req } = ctx;
+
+      theme = req.cookies.theme || "light";
+    } else {
+      theme = Cookies.get("theme") === "dark" ? "dark" : "light";
+    }
+
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps, theme };
+  }
+
+  render() {
+    const { theme } = this.props;
+    return (
+      <Html>
+        <Head />
+        <body className={theme}>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
+
+export default MyDocument;

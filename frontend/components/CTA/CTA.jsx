@@ -11,7 +11,7 @@ const CTA = () => {
           ideas into reality.
         </h5>
       </section>
-      <Link href="#" className={styles.cta_btn}>
+      <Link href="#" className={` cta_btn ${styles.cta_btn}`}>
         <h3>Book Your Free Consultation</h3>
       </Link>
     </div>

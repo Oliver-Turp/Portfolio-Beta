@@ -15,7 +15,7 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.contact_page}>
+      <div className={`contact_page ${styles.contact_page}`}>
         <NavBar />
         <main className={styles.contact_content}>
           <section className={styles.contact_text_wrap}>
@@ -26,7 +26,7 @@ const About = () => {
               <h3>please feel free to get in touch!</h3>
               <p>I am to reply to everyone within 3 business days.</p>
             </section>
-            <button className={styles.contact__cta}>
+            <button className={`contact__cta ${styles.contact__cta}`}>
               <a href="#">
                 <h5>Let's Start Something Special!</h5>
               </a>
@@ -58,7 +58,7 @@ const About = () => {
                 )}
               ></section>
             </section>
-            <section className={styles.contact_form}>
+            <section className={`contact_form ${styles.contact_form}`}>
               <h2>Put Me Here Victor</h2>
               <section>
                 <a href="#">Option 1</a>

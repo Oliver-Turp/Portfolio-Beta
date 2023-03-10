@@ -13,7 +13,7 @@ import styles from "./TechSlider.module.css";
 
 const Test = () => {
   return (
-    <div className={styles.tech_slider_bg}>
+    <div className={`tech_slider_bg ${styles.tech_slider_bg}`}>
       <h3>Technologies I've Worked With</h3>
       <section className={styles.tech_slider_container}>
         <section className={styles.tech_slider}>
