@@ -1,0 +1,140 @@
+.generic__form-wrap {
+    background: url("../Assets/Images/contactBackground.png") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  animation: contact-bg 35s infinite;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.generic__form-wrap h1 {
+padding: 1rem 0;
+text-align: center;
+font-size: 5rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.5rem;
+color: #fff;
+text-shadow: 0 1rem 2rem #000;
+}
+
+.generic__form-wrap h6 {
+  color: #fff;
+  text-shadow: 0 1rem 2rem #000;
+  padding-bottom: 2rem;
+text-align: center;
+text-transform: capitalize;
+font-size: 2rem;
+}
+
+.generic__form-wrap form {
+    margin: 0 10rem 10rem;
+    padding: 5rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.generic__form-wrap form .hidden__response {
+    display: none;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.generic__form-wrap form.submitted .pm__contact_input-group, 
+.generic__form-wrap form.submitted .pm__contact_input-button {
+    display: none;
+}
+
+.generic__form-wrap form.submitted .hidden__response {
+    display: block;
+}
+
+@keyframes contact-bg {
+  0% {
+    background-color: #3d3d3d;
+  }
+  25% {
+    background-color: #ced8e4;
+  }
+  50% {
+    background-color: #1e81f3;
+  }
+  75% {
+    background-color: #ff7842;
+  }
+  100% {
+    background-color: #3d3d3d;
+  }
+}
+
+.pm__contact_input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.pm__contact_input-groups {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pm__contact_input-groups .pm__contact_input-group {
+  width: 48.5%;
+}
+
+.pm__contact_input-item,
+.pm__contact_input-textarea {
+  padding: 3rem 1rem 1rem 1rem;
+  background-color: #eee;
+  border: 0.1rem solid #eee;
+  font-size: 1.4rem;
+  color: #777;
+  letter-spacing: 0.1rem;
+  border-radius: 1rem;
+  transition: border 0.3s;
+}
+
+.pm__contact_input-item:focus,
+.pm__contact_input-textarea:focus {
+  border: 0.1rem solid #ccc;
+}
+
+.pm__contact_input-group label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #555;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.pm__contact_input-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  background-color: #777;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.pm__contact_input-button:hover {
+  background-color: #555;
+}
+
+.pm__contact_input-textarea {
+  max-height: 25rem;
+  max-width: 100%;
+}
