@@ -5,13 +5,13 @@
 - [ ] - Link Footer To Page
 - [x] - Create ThemeToggle
 - [ ] - Add onScroll effects. FramerMotion. Need SSG etc setup first to see if what transitions we can accomplish, or if we just stick with animate on scroll.
-- [ ] - Boost new page load times, still slower than I wanted. SSG?
-- [ ] - Need To Move To Top Of The Page When New Page Is Loaded.
+- [ ] - Boost new page load times, still slower than I wanted. SSG? **Task For Victor.**
+- [ ] - Need To Move To Top Of The Page When New Page Is Loaded. **Task For Victor.**
 
 ## HomePage: 
 - [ ] - Decide on hero illustration
-- [ ] - Link CTA to Contact Form
-- [ ] - Fix FAQ Section
+- [ ] - Link CTA to Contact Form. **Task For Victor.**
+- [ ] - Fix FAQ Section. **Task For Victor.**
 - [ ] - Decide on cta illustration
 - [ ] - Add Responsiveness
 
@@ -24,7 +24,7 @@
 - [ ] - Link Section To Separate Sandbox Site
 
 ## ContactPage:
-- [ ] - Needs A Working Contact Form Like Previous. Task For Victor.
+- [ ] - Needs A Working Contact Form Like Previous. **Task For Victor.**
 - [ ] - Add Responsiveness
 
 ## Unstarted Pages:
